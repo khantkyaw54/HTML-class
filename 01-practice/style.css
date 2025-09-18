@@ -21,7 +21,7 @@ img {
 }
 
 .inner {
-    width: 86%;
+    width: 86.486%;
     max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@ h1 {
 .mainvisual .inner {
     padding: 240px 0 80px;
     margin-bottom: 100px;
-    background: url(./images/bg_main.png)no-repeat center center;
+    background: url(./images/bg_main.png)no-repeat center center, cover;
 }
 
 .mainvisual .text {
@@ -117,28 +117,30 @@ footer
 footer {
     background-color: #1E1E1E;
     padding: 100px 0;
+    color: #fff;
 }
 
-footer .inner {
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.address {
+footer .inner .address div {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 45px 1fr;
     column-gap: 50px;
-    margin-bottom: 100px;
 
 }
+
+
+
+
+
+
 
 @media (width>=640px) {
     .mainvisual .inner {
         background: none;
     }
 
-    .mainvisual {
+    main .mainvisual {
         background: url(./images/bg_main.png)no-repeat center center;
+        padding: 240px auto 80px;
 
     }
 
