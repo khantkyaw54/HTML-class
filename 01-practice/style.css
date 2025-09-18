@@ -1,0 +1,155 @@
+@charset "uft-8";
+
+body {
+    font-size: 14px;
+    font-family: "Times New Roman",
+        "YuMincho",
+        "Hiragino Mincho ProN",
+        "Yu Mincho",
+        "MS PMincho",
+        serif;
+    font-weight: normal;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    color: #1E1E1E;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.inner {
+    width: 86%;
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------
+headers
+-------------*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.mainvisual .inner {
+    padding: 240px 0 80px;
+    margin-bottom: 100px;
+    background: url(./images/bg_main.png)no-repeat center center;
+}
+
+.mainvisual .text {
+    padding: 40px;
+    background-color: #fff;
+    display: inline-block;
+    max-width: 343px;
+}
+
+.for-posts h2 {
+    display: block;
+    position: relative;
+    font-size: 36px;
+    line-height: 0.8;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+.for-posts h2::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-color: #72C9F3;
+    border-radius: 50%;
+}
+
+.for-posts h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #000;
+    margin: 20px auto 0;
+}
+
+.post-1 {
+    padding-bottom: 50px;
+    border-bottom: 1px #ddd solid;
+}
+
+.post-1 img {
+    margin-top: 50px;
+}
+
+.post-2 {
+    margin-top: 50px;
+}
+
+.main-posts p {
+    margin: 20px 0;
+}
+
+.main-posts a {
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 0.5;
+    background-color: #F5F5F5;
+}
+
+.main-posts {
+    margin-bottom: 50px;
+}
+
+
+/*---------
+footer
+---------*/
+footer {
+    background-color: #1E1E1E;
+    padding: 100px 0;
+}
+
+footer .inner {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.address {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 50px;
+    margin-bottom: 100px;
+
+}
+
+@media (width>=640px) {
+    .mainvisual .inner {
+        background: none;
+    }
+
+    .mainvisual {
+        background: url(./images/bg_main.png)no-repeat center center;
+
+    }
+
+    .main-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+    }
+
+    .post-1 {
+        border-bottom: none;
+    }
+
+}
