@@ -9,7 +9,7 @@ body {
         "MS PMincho",
         serif;
     font-weight: normal;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: 0.05em;
     color: #1E1E1E;
 }
@@ -37,10 +37,17 @@ h1 {
     padding: 40px 0;
 }
 
+.mainvisual h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
 .mainvisual .inner {
     padding: 240px 0 80px;
     margin-bottom: 100px;
-    background: url(./images/bg_main.png)no-repeat center center, cover;
+    background: url(./images/bg_main.png)no-repeat center center/cover;
 }
 
 .mainvisual .text {
@@ -48,6 +55,7 @@ h1 {
     background-color: #fff;
     display: inline-block;
     max-width: 343px;
+
 }
 
 .for-posts h2 {
@@ -138,10 +146,8 @@ footer .inner .address div {
         background: none;
     }
 
-    main .mainvisual {
-        background: url(./images/bg_main.png)no-repeat center center;
-        padding: 240px auto 80px;
-
+    .mainvisual {
+        background: url(./images/bg_main.png)no-repeat center center/cover;
     }
 
     .main-posts {
