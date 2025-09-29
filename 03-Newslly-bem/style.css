@@ -55,10 +55,12 @@ footer {
     line-height: 1.7;
     margin-left: auto;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .news__title,
-.trending__title {
+.trending__title,
+.discovery__title {
     color: #202124;
     font-weight: bold;
     font-size: 24px;
@@ -66,6 +68,7 @@ footer {
     line-height: 1.3;
     border-left: 10px solid #FA6980;
     padding-left: 10px;
+    text-transform: uppercase;
 }
 
 /*unit
@@ -139,4 +142,55 @@ footer {
 .unit__padding {
     padding: 35px;
     background-color: #fff;
+}
+
+
+/*about.html
+------------------*/
+/*post
+-----------------*/
+.post__inner {
+    width: 88%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.btn-firstchild {
+    margin-bottom: 40px;
+}
+
+.btn-info {
+    background-color: #202124;
+}
+
+.unit__title-about {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/*discovery
+------------------*/
+.discovery {
+    padding: 60px 0;
+    background-color: #F6F6F6;
+}
+
+.discovery__inner {
+    width: 88%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.discovery__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+
+.unit__date-about {
+    margin-bottom: 0;
 }
