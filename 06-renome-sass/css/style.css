@@ -34,6 +34,7 @@ img {
   padding: 350px 0 120px;
   background: url(../images/pic_main.png) no-repeat center/cover;
   color: #fff;
+  margin-bottom: 100px;
 }
 .mainvisual__inner {
   max-width: 800px;
@@ -46,10 +47,111 @@ img {
   line-height: 1.4285714286;
   font-weight: bold;
   margin-bottom: 40px;
+  /*<wbr>*/
+  word-break: keep-all;
 }
 .mainvisual__lead {
   font-size: 18px;
   line-height: 1.2222222222;
+}
+
+/*concept
+----------------*/
+.concept {
+  padding-bottom: 100px;
+}
+.concept__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.concept__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.concept__content {
+  display: grid;
+  row-gap: 40px;
+  text-align: center;
+}
+.concept__content p {
+  word-break: keep-all;
+}
+@media (500px <= width) {
+  .concept__content {
+    word-break: keep-all;
+  }
+}
+
+/*open
+-------------*/
+.open {
+  padding-bottom: 100px;
+}
+.open__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.open__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.open__table {
+  overflow: auto;
+}
+.open__table table {
+  width: 100%;
+  min-width: 700px;
+  /*border-collapse: collapse;
+  when reset css is not used.*/
+}
+.open__table th {
+  background-color: #EDEFF2;
+}
+.open__table th,
+.open__table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #707070;
+}
+.open__tip {
+  margin-top: 20px;
+}
+@media (815px <= width) {
+  .open__tip {
+    display: none;
+  }
+}
+
+/*recruit
+-----------------*/
+.recruit {
+  padding-bottom: 100px;
+}
+.recruit__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recruit__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 /*footer
