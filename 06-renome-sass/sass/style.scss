@@ -1,0 +1,114 @@
+@use 'sass:math';
+
+$breakpoints: (
+    "desktop":640px,
+    "large":1280px,
+);
+
+$color-text: #404040;
+$color-main: #EDEFF2;
+$color-bg: #985E5B;
+
+$font-famly-base: "游ゴシック", "Yu Gothic", Helvetica, Arial, sans-serif;
+
+@mixin inner($mw: 800px, $w: percentage(math.div(560, 640))) {
+    max-width: $mw;
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin mq($breakpoint) {
+    @media(#{map-get($breakpoints,$breakpoint)}<=width) {
+        @content;
+    }
+}
+
+body {
+    color: $color-text;
+    font-size: 14px;
+    line-height: math.div(24, 14);
+    letter-spacing: #{math.div(100, 1000)}em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
+}
+
+/*common
+----------*/
+/*header
+------------*/
+.header {
+    padding: 40px 0;
+    text-align: center;
+
+    &__inner {
+        @include inner();
+    }
+}
+
+
+/*index.html
+--------------*/
+/*mainvisual
+---------------------*/
+.mainvisual {
+    padding: 350px 0 120px;
+    background: url(../images/pic_main.png) no-repeat center/cover;
+    color: #fff;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: math.div(60, 42);
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    &__lead {
+        font-size: 18px;
+        line-height: math.div(22, 18);
+    }
+}
+
+/*footer
+----------*/
+.footer {
+    padding: 40px 0;
+    background-color: $color-main;
+    text-align: center;
+
+
+    &__inner {
+        @include inner();
+        display: grid;
+        row-gap: 15px;
+
+        @include mq(desktop) {
+            grid-auto-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+
+
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__copy {
+        font-size: 12px;
+        line-height: math.div(18, 12);
+    }
+
+
+}
